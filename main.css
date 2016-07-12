@@ -1,4 +1,19 @@
+header {
+	background-color: green;
+}
+
 header nav {
 	display: flex;
 	justify-content: flex-end;
+	padding: 30px;
+
+}
+
+header p {
+	margin: 20px;
+}
+
+header h1 {
+	padding: 15px;
+	
 }
