@@ -37,7 +37,7 @@ header .row form input[type=text]:focus {
 .jumbotron {
 	display: flex;
 	align-items: center;
-	background-image: url("flower-garden.jpg");
+	background-image: url("images/flower-garden.jpg");
 	background-size: cover;
 	height: 500px;
 	color: white;
@@ -49,6 +49,20 @@ section .row img {
 }
 
 footer {
-	display: flex;
-	justify-content: center;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
 }
