@@ -13,9 +13,24 @@ header p {
 }
 
 header h1 {
-	padding: 15px;
+	padding: 20px;
 
 	
+}
+
+header .row form {
+	padding: 50px;
+	
+}
+
+header .row form .input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+header .row form input[type=text]:focus {
+    width: 100%;
 }
 
 .jumbotron {
