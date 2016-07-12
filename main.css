@@ -1,3 +1,4 @@
+
 header {
 
 }
@@ -5,7 +6,7 @@ header {
 header nav {
 	display: flex;
 	justify-content: flex-end;
-	padding: 30px;
+	padding: 45px;
 }
 
 header p {
@@ -45,4 +46,9 @@ header .row form input[type=text]:focus {
 section .row img {
   margin: 0 0 30px;
   width: 100%;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
 }
