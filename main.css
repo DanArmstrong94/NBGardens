@@ -23,6 +23,8 @@ header h1 {
 .jumbotron {
 	display: flex;
 	align-items: center;
-	background-image: url('http://94.136.40.103/~breezyknees.co.uk/wp-content/uploads/2014/11/garden-july14-0821.jpg')
+	background-image: url("flower-garden.jpg");
 	background-size: cover;
+	height: 500px;
+	color: white;
 }
