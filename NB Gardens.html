@@ -5,22 +5,53 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="app.js"></script>
+		<link href="images/Favicon.ico" rel="icon" type="image/x-icon" />
 	</head>
 
 	<body>
 	
+	<!-- Main Body -->
+	
+
+
 	<header class="container">
 		<div class="row">
+		<a href="NB Gardens.html">
 			<h1 class="col-sm-3">NB Gardens</h1>
+		</a>
 			<div class="col-sm-5">
 				<form>
 					<input type="text" placeholder="Search..." required>	
 				</form>
 			</div>
+			<!-- JQuery Drop Down Login and other Nav parts -->
 			<nav class="col-sm-4">
-				<a class="btn btn-primary" href="#">Sign in/Register</a>
-				<a class="btn btn-primary" href="#">Wishlist</a>
-				<a class="btn btn-primary" href="#">Shopping Basket</a>
+			<ul>
+				<li><a class="btn btn-primary" href="#">Wishlist</a></li>
+				<li><a class="btn btn-primary" href="#">Basket</a></li>
+				<li id="login">
+				  <a id="login-trigger" href="#">
+					Log in <span>▼</span>
+				  </a>
+				  <div id="login-content">
+					<form>
+					  <fieldset id="inputs">
+						<input id="username" type="email" name="Email" placeholder="Your email address" required>   
+						<input id="password" type="password" name="Password" placeholder="Password" required>
+					  </fieldset>
+					  <fieldset id="actions">
+						<input type="submit" id="submit" value="Log in">
+						<label><input type="checkbox" checked="checked"> Keep me signed in</label>
+					  </fieldset>
+					</form>
+				  </div>                     
+				</li>
+				<li id="signup">
+				  <a href="#">Sign up FREE</a>
+				</li>
+			</ul>
 			</nav>
 		</div>
 	</header>
@@ -29,8 +60,7 @@
 		<div class="container">
 			<div class="row text-center">
 				<h2><b>Welome to NB Gardens - The Home of your Garden</b></h2>
-				<h3>New Customer?  <a class="btn btn-primary" href="#">Register Now!</a>
-		
+				<h3>New Customer? <a class="btn btn-primary" href="#">Register Here!</a></h3>
 			</div>
 		</div>
 	</section>
