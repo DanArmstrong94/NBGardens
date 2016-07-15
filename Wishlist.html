@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NB Gardens - Wishlist</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="wishlist.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="app.js"></script>
+		<link href="images/Favicon.ico" rel="icon" type="image/x-icon" />
+	</head>
+
+	<body>
+	
+	<!-- Main Body -->
+	
+
+
+	<header class="container">
+		<div class="row">
+		<a href="NB Gardens.html">
+			<h1 class="col-sm-3">NB Gardens</h1>
+		</a>
+			<div class="col-sm-5">
+				<form>
+					<input id="search-terms" type="search" placeholder="Search..." required>
+					<input type="submit" value="Search">
+				</form>
+			</div>
+			<!-- JQuery Drop Down Login and other Nav parts -->
+			<nav class="col-sm-4">
+			<ul>
+				<li><a class="btn btn-primary" href="#">Wishlist</a></li>
+				<li><a class="btn btn-primary" href="#">Basket</a></li>
+				<li id="login">
+				  <a id="login-trigger" href="#">
+					Log in <span>▼</span>
+				  </a>
+				  <div id="login-content">
+					<form>
+					  <fieldset id="inputs">
+						<input id="email" type="email" name="Email" placeholder="Email Address" required>   
+						<input id="password" type="password" name="Password" placeholder="Password" required>
+					  </fieldset>
+					  <fieldset id="actions">
+						<input type="submit" id="submit" value="Log in">
+						<label><input type="checkbox" checked="checked"> Keep me signed in</label>
+					  </fieldset>
+					</form>
+				  </div>                     
+				</li>
+				<li id="signup">
+				  <a href="Registration.html">Sign up FREE</a>
+				</li>
+			</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<section class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				 <img src="images/German_garden_gnome.jpg" alt="wishlistItem1">
+			</div>
+			<div class="col-sm-6">
+				 <h3>Relaxed Gnome</h3>
+				 <p>A Stylish German Garden Gnome, in a lying pose with pipe.<p>
+			</div>
+			<div class="col-sm-1">
+				 <h3>£39.99</h3>
+				 <p>Quant: 1</p>
+			</div>
+			<div class="col-sm-2">
+				<a class="btn btn-primary" href="#">Add to Basket</a>
+				<a class="btn btn-primary" href="#">Remove from Wishlist</a>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-3">
+				 <img src="images/wheelbarrow.jpg" alt="wishlistItem2">
+			</div>
+			<div class="col-sm-6">
+				 <h3>Racing Green Wheelbarrow</h3>
+				 <p>15L wheelbarrow with aliminium frame for more manouverability and for easier transport.</p>
+			</div>
+			<div class="col-sm-1">
+				 <h3>£60.99</h3>
+				 <p>Quant: 1</p>
+			</div>
+			<div class="col-sm-2">
+				<a class="btn btn-primary" href="#">Add to Basket</a>
+				<a class="btn btn-primary" href="#">Remove from Wishlist</a>
+			</div>
+		</div>
+		
+				<div class="row">
+			<div class="col-sm-3">
+				 <img src="images/gardenTable.jpg" alt="wishlistItem3">
+			</div>
+			<div class="col-sm-6">
+				 <h3>Childrens Garden Bench</h3>
+				 <p>Oak wood garden bench perfect for children.</p>
+			</div>
+			<div class="col-sm-1">
+				 <h3>£150.50</h3>
+				 <p>Quant: 1</p>
+			</div>
+			<div class="col-sm-2">
+				<a class="btn btn-primary" href="#">Add to Basket</a>
+				<a class="btn btn-primary" href="#">Remove from Wishlist</a>
+			</div>
+		</div>
+	</section>
+
+	</body>
+</html>
