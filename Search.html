@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>NB Gardens - Home</title>
+		<title>NB Gardens - Search</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="wishlist.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script src="app.js"></script>
-		<script src="search.js"></script>
+		<script>
+			var search = searchitems;
+			if (search !== "Gnome"){
+				document.getElementByID("GnomeRow").style.display = "none";
+			}
+			if (search !== "Wheelbarrow"){
+				document.getElementByID("WheelbarrowRow").style.display = "none";
+			}
+			if (search !== "Table"){
+				document.getElementByID("TableRow").style.display = "none";
+			}
+		</script>
 		<link href="images/Favicon.ico" rel="icon" type="image/x-icon" />
 	</head>
 
@@ -63,7 +74,7 @@
 		</div>
 	</header>
 		
-		<section class="container">
+	<section class="container">
 		
 		<div class="row" id="GnomeRow">
 			<div class="col-sm-3">
