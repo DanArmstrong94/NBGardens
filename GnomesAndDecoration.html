@@ -22,9 +22,14 @@
 			<h1 class="col-sm-3">NB Gardens</h1>
 		</a>
 			<div class="col-sm-5">
-				<form>
-					<input id="search-terms" type="search" placeholder="Search..." required>
-					<input type="submit" value="Search">
+				<form action="Search.html">
+					<input name="searchitems" id="search-terms" type="text" placeholder="Search..." required>
+					<input type="submit" value="search" onclick="MyFunction()">
+					<script>
+						function MyFunction{
+							sessionStorage.setItem("searchValue", "search-terms");
+						}
+					</script>
 				</form>
 			</div>
 			<!-- JQuery Drop Down Login and other Nav parts -->

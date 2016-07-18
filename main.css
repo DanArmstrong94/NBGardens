@@ -25,13 +25,13 @@ header .row form {
 	
 }
 
-header .row form .input[type=search] {
+header .row form .input[type=text] {
     width: 100px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
 
-header .row form input[type=search]:focus {
+header .row form input[type=text]:focus {
     width: 80%;
 }
 
