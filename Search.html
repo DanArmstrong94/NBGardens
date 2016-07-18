@@ -9,14 +9,23 @@
 		<script src="app.js"></script>
 		<script>
 			var search = searchitems;
-			if (search !== "Gnome"){
-				document.getElementByID("GnomeRow").style.display = "none";
+			if (search === "Gnome"){
+				document.getElementById("GnomeRow").style.display = "hidden";
 			}
-			if (search !== "Wheelbarrow"){
-				document.getElementByID("WheelbarrowRow").style.display = "none";
+			else {
+				document.getElementById("GnomeRow").style.display = "hidden";
 			}
-			if (search !== "Table"){
-				document.getElementByID("TableRow").style.display = "none";
+			if (search === "Wheelbarrow"){
+				document.getElementById("WheelbarrowRow").style.display = "hidden";
+			}
+			else {
+				document.getElementById("WheelbarrowRow").style.display = "hidden";
+			}
+			if (search === "Table"){
+				document.getElementById("TableRow").style.display = "hidden";
+			}
+			else {
+				document.getElementById("TableRow").style.display = "hidden";
 			}
 		</script>
 		<link href="images/Favicon.ico" rel="icon" type="image/x-icon" />
