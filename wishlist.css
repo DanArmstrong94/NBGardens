@@ -224,3 +224,7 @@ body h1 {
 #ProceedToCheckout {
 	text-align: center;
 }
+
+#GnomeRow {
+    display: inline-block;
+}

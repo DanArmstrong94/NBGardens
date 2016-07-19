@@ -7,27 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="wishlist.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script src="app.js"></script>
-		<script>
-			var search = searchitems;
-			if (search === "Gnome"){
-				document.getElementById("GnomeRow").style.display = "hidden";
-			}
-			else {
-				document.getElementById("GnomeRow").style.display = "hidden";
-			}
-			if (search === "Wheelbarrow"){
-				document.getElementById("WheelbarrowRow").style.display = "hidden";
-			}
-			else {
-				document.getElementById("WheelbarrowRow").style.display = "hidden";
-			}
-			if (search === "Table"){
-				document.getElementById("TableRow").style.display = "hidden";
-			}
-			else {
-				document.getElementById("TableRow").style.display = "hidden";
-			}
-		</script>
 		<link href="images/Favicon.ico" rel="icon" type="image/x-icon" />
 	</head>
 
@@ -43,12 +22,13 @@
 			<h1 class="col-sm-3">NB Gardens</h1>
 		</a>
 			<div class="col-sm-5">
-				<form action="Search.html">
+                <form action="Search.html" method="get">
 					<input name="searchitems" id="search-terms" type="text" placeholder="Search..." required>
 					<input type="submit" value="search" onclick="MyFunction()">
 					<script>
-						function MyFunction{
-							sessionStorage.setItem("searchValue", "search-terms");
+						function MyFunction(){
+                            var search = document.getElementById("search-terms").value;
+							sessionStorage.setItem("searchValue", search);
 						}
 					</script>
 				</form>
@@ -109,7 +89,7 @@
 			</div>
 			<div class="col-sm-6">
 				 <h3>Racing Green Wheelbarrow</h3>
-				 <p>15L wheelbarrow with aliminium frame for more manouverability and for easier transport.</p>
+				 <p>15L wheelbarrow with aluminium frame for more manouverability and for easier transport.</p>
 			</div>
 			<div class="col-sm-1">
 				 <h3>£60.99</h3>
@@ -126,7 +106,7 @@
 				 <img src="images/gardenTable.jpg" alt="NAItem3">
 			</div>
 			<div class="col-sm-6">
-				 <h3>Childrens Garden Bench</h3>
+				 <h3>Children's Garden Bench</h3>
 				 <p>Oak wood garden bench perfect for children.</p>
 			</div>
 			<div class="col-sm-1">
@@ -138,6 +118,24 @@
 				<a class="btn btn-primary" href="#">Add to Wishlist</a>
 			</div>
 		</div>
+            
+            	<script>
+                   
+                   if (sessionStorage.getItem("searchValue") !== "Gnome"){
+                       var gnome = document.getElementById('GnomeRow');
+                       gnome.style.display = 'none';
+                   };
+                   
+                   if (sessionStorage.getItem("searchValue") !== "Wheelbarrow"){
+                       var wheelbarrow = document.getElementById('WheelbarrowRow');
+                       wheelbarrow.style.display = 'none';
+                   };
+                   
+                   if (sessionStorage.getItem("searchValue") !== "Table"){
+                       var table = document.getElementById('TableRow');
+                       table.style.display = 'none';                       
+                   };
+		</script>
 	</section>
 
 	

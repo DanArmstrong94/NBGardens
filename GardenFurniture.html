@@ -22,12 +22,13 @@
 			<h1 class="col-sm-3">NB Gardens</h1>
 		</a>
 			<div class="col-sm-5">
-				<form action="Search.html">
+                <form action="Search.html" method="get">
 					<input name="searchitems" id="search-terms" type="text" placeholder="Search..." required>
 					<input type="submit" value="search" onclick="MyFunction()">
 					<script>
-						function MyFunction{
-							sessionStorage.setItem("searchValue", "search-terms");
+						function MyFunction(){
+                            var search = document.getElementById("search-terms").value;
+							sessionStorage.setItem("searchValue", search);
 						}
 					</script>
 				</form>
