@@ -24,12 +24,11 @@
 			<div class="col-sm-5">
                 <form action="Search.html" method="get">
 					<input name="searchitems" id="search-terms" type="text" placeholder="Search..." required>
-					<input type="submit" value="search" onclick="MyFunction()">
+					<input type="submit" value="Search" onclick="MyFunction()">
 					<script>
 						function MyFunction(){
-                            var search = document.getElementById("search-terms").value;
-							sessionStorage.setItem("searchValue", search);
-						}
+							sessionStorage.setItem("searchValue", document.getElementById("search-terms").value);
+						};
 					</script>
 				</form>
 			</div>
@@ -125,6 +124,7 @@
 						<img class="img-responsive" src="images/insticon.jpg" alt="Instagram">
 					</a>
 				</li>
+		</div>
 	</footer>
 
 </html>
