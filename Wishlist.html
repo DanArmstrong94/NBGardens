@@ -63,6 +63,8 @@
 	</header>
 	
 	<section class="container">
+	
+	<div id="WGnomeRow">
 		<div class="row">
 			<div class="col-sm-3">
 				 <img src="images/German_garden_gnome.jpg" alt="wishlistItem1">
@@ -80,7 +82,9 @@
 				<a class="btn btn-primary" href="#">Remove from Wishlist</a>
 			</div>
 		</div>
-		
+	</div>
+	
+	<div id="WWheelbarrowRow">
 		<div class="row">
 			<div class="col-sm-3">
 				 <img src="images/wheelbarrow.jpg" alt="wishlistItem2">
@@ -98,8 +102,10 @@
 				<a class="btn btn-primary" href="#">Remove from Wishlist</a>
 			</div>
 		</div>
-		
-				<div class="row">
+	</div>
+	
+	<div id="WTableRow">
+		<div class="row">
 			<div class="col-sm-3">
 				 <img src="images/gardenTable.jpg" alt="wishlistItem3">
 			</div>
@@ -116,6 +122,25 @@
 				<a class="btn btn-primary" href="#">Remove from Wishlist</a>
 			</div>
 		</div>
+	</div>
+	<!--
+	    <script>
+                   if (sessionStorage.getItem("wGnomeTrue") === true){
+                       var gnome = document.getElementById('WGnomeRow');
+                       gnome.style.display = 'block';
+                   };
+                   
+                   if (sessionStorage.getItem("wWheelbarrowTrue") === true){
+                       var wheelbarrow = document.getElementById('WWheelbarrowRow');
+                       wheelbarrow.style.display = 'block';
+                   };
+                   
+                   if (sessionStorage.getItem("wTableTrue") === true){
+                       var table = document.getElementById('WTableRow');
+                       table.style.display = 'block';                       
+                   };
+		</script>
+	-->
 	</section>
 
 	</body>
@@ -139,6 +164,7 @@
 						<img class="img-responsive" src="images/insticon.jpg" alt="Instagram">
 					</a>
 				</li>
+			</ul>
 		</div>
 	</footer>
 </html>
