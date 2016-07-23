@@ -62,7 +62,7 @@
 	<h1>Garden Tools</h1>
 	
 	<section class="container">
-		<div class="row">
+		<div class="row" id="WheelbarrowRow">
 			<div class="col-sm-3">
 				 <img src="images/wheelbarrow.jpg" alt="NAItem2">
 			</div>
@@ -75,8 +75,13 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="#">Add to Basket</a>
-				<a class="btn btn-primary" href="#">Add to Wishlist</a>
+				<a class="btn btn-primary" href="">Add to Basket</a>
+				<a id="wishlistAddWheelbarrow" class="btn btn-primary" href="">Add to Wishlist</a>
+					<script>
+						document.getElementById("wishlistAddWheelbarrow").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wWheelbarrowTrue", "true");
+						});
+					</script>
 			</div>
 		</div>
 		

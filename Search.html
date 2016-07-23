@@ -78,12 +78,9 @@
 			</div>
 			<div class="col-sm-2">
 				<a class="btn btn-primary" href="">Add to Basket</a>
-				<a id="wishlistbuttonGnome" class="btn btn-primary" href="">
-					Add to Wishlist
-				</a>
+				<a id="wishlistAddGnome" class="btn btn-primary" href="">Add to Wishlist</a>
 					<script>
-						
-						document.getElementById("wishlistbuttonGnome").addEventListener("click", function wishlistFunction(){
+						document.getElementById("wishlistAddGnome").addEventListener("click", function wishlistFunction(){
 							localStorage.setItem("wGnomeTrue", "true");
 						});
 					</script>
@@ -104,15 +101,12 @@
 			</div>
 			<div class="col-sm-2">
 				<a class="btn btn-primary" href="">Add to Basket</a>
-				<a class="btn btn-primary" href="">
-					Add to Wishlist
-					<!--
+				<a id="wishlistAddWheelbarrow" class="btn btn-primary" href="">Add to Wishlist</a>
 					<script>
-						var bool = true;
-						sessionStorage.setItem("wWheelbarrowTrue", bool);
+						document.getElementById("wishlistAddWheelbarrow").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wWheelbarrowTrue", "true");
+						});
 					</script>
-					-->
-				</a>
 			</div>
 		</div>
 		
@@ -132,15 +126,12 @@
 				<a class="btn btn-primary" href="">
 					Add to Basket
 				</a>
-				<a class="btn btn-primary" href="">
-					Add to Wishlist
-					<!--
+				<a id="wishlistAddTable" class="btn btn-primary" href="">Add to Wishlist</a>
 					<script>
-						var bool = true;
-						sessionStorage.setItem("wTableTrue", bool);
+						document.getElementById("wishlistAddTable").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wTableTrue", "true");
+						});
 					</script>
-					-->
-				</a>
 			</div>
 		</div>
             

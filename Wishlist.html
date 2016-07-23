@@ -79,7 +79,12 @@
 			</div>
 			<div class="col-sm-2">
 				<a class="btn btn-primary" href="#">Add to Basket</a>
-				<a class="btn btn-primary" href="#">Remove from Wishlist</a>
+				<a id="wishlistRemoveGnome" class="btn btn-primary" href="Wishlist.html">Remove from Wishlist</a>
+					<script>
+						document.getElementById("wishlistRemoveGnome").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wGnomeTrue", "false");
+						});
+					</script>
 			</div>
 		</div>
 	</div>
@@ -99,7 +104,12 @@
 			</div>
 			<div class="col-sm-2">
 				<a class="btn btn-primary" href="#">Add to Basket</a>
-				<a class="btn btn-primary" href="#">Remove from Wishlist</a>
+				<a id="wishlistRemoveWheelbarrow" class="btn btn-primary" href="Wishlist.html">Remove from Wishlist</a>
+					<script>
+						document.getElementById("wishlistRemoveWheelbarrow").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wWheelbarrowTrue", "false");
+						});
+					</script>
 			</div>
 		</div>
 	</div>
@@ -119,7 +129,12 @@
 			</div>
 			<div class="col-sm-2">
 				<a class="btn btn-primary" href="#">Add to Basket</a>
-				<a class="btn btn-primary" href="#">Remove from Wishlist</a>
+				<a id="wishlistRemoveTable" class="btn btn-primary" href="Wishlist.html">Remove from Wishlist</a>
+					<script>
+						document.getElementById("wishlistRemoveTable").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wTableTrue", "false");
+						});
+					</script>
 			</div>
 		</div>
 	</div>

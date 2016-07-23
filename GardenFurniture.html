@@ -65,12 +65,12 @@
 	<h1>Garden Furniture</h1>
 	
 	<section class="container">
-		<div class="row">
+		<div class="row" id="TableRow">
 			<div class="col-sm-3">
 				 <img src="images/gardenTable.jpg" alt="NAItem3">
 			</div>
 			<div class="col-sm-6">
-				 <h3>Childrens Garden Bench</h3>
+				 <h3>Children's Garden Bench</h3>
 				 <p>Oak wood garden bench perfect for children.</p>
 			</div>
 			<div class="col-sm-1">
@@ -78,8 +78,15 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="#">Add to Basket</a>
-				<a class="btn btn-primary" href="#">Add to Wishlist</a>
+				<a class="btn btn-primary" href="">
+					Add to Basket
+				</a>
+				<a id="wishlistAddTable" class="btn btn-primary" href="">Add to Wishlist</a>
+					<script>
+						document.getElementById("wishlistAddTable").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wTableTrue", "true");
+						});
+					</script>
 			</div>
 		</div>
 		

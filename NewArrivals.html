@@ -65,7 +65,7 @@
 	<h1>New Arrivals</h1>
 	
 	<section class="container">
-		<div class="row">
+		<div class="row" id="GnomeRow">
 			<div class="col-sm-3">
 				 <img src="images/German_garden_gnome.jpg" alt="NAItem1">
 			</div>
@@ -78,35 +78,45 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="#">Add to Basket</a>
-				<a class="btn btn-primary" href="#">Add to Wishlist</a>
+				<a class="btn btn-primary" href="">Add to Basket</a>
+				<a id="wishlistAddGnome" class="btn btn-primary" href="">Add to Wishlist</a>
+					<script>
+						document.getElementById("wishlistAddGnome").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wGnomeTrue", "true");
+						});
+					</script>
 			</div>
 		</div>
 		
-		<div class="row">
+		<div class="row" id="WheelbarrowRow">
 			<div class="col-sm-3">
 				 <img src="images/wheelbarrow.jpg" alt="NAItem2">
 			</div>
 			<div class="col-sm-6">
 				 <h3>Racing Green Wheelbarrow</h3>
-				 <p>15L wheelbarrow with aliminium frame for more manouverability and for easier transport.</p>
+				 <p>15L wheelbarrow with aluminium frame for more manouverability and for easier transport.</p>
 			</div>
 			<div class="col-sm-1">
 				 <h3>£60.99</h3>
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="#">Add to Basket</a>
-				<a class="btn btn-primary" href="#">Add to Wishlist</a>
+				<a class="btn btn-primary" href="">Add to Basket</a>
+				<a id="wishlistAddWheelbarrow" class="btn btn-primary" href="">Add to Wishlist</a>
+					<script>
+						document.getElementById("wishlistAddWheelbarrow").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wWheelbarrowTrue", "true");
+						});
+					</script>
 			</div>
 		</div>
 		
-		<div class="row">
+		<div class="row" id="TableRow">
 			<div class="col-sm-3">
 				 <img src="images/gardenTable.jpg" alt="NAItem3">
 			</div>
 			<div class="col-sm-6">
-				 <h3>Childrens Garden Bench</h3>
+				 <h3>Children's Garden Bench</h3>
 				 <p>Oak wood garden bench perfect for children.</p>
 			</div>
 			<div class="col-sm-1">
@@ -114,8 +124,15 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="#">Add to Basket</a>
-				<a class="btn btn-primary" href="#">Add to Wishlist</a>
+				<a class="btn btn-primary" href="">
+					Add to Basket
+				</a>
+				<a id="wishlistAddTable" class="btn btn-primary" href="">Add to Wishlist</a>
+					<script>
+						document.getElementById("wishlistAddTable").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wTableTrue", "true");
+						});
+					</script>
 			</div>
 		</div>
 	</section>

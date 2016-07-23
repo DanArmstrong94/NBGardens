@@ -65,7 +65,7 @@
 	<h1>Gnomes and Decoration</h1>
 	
 	<section class="container">
-		<div class="row">
+		<div class="row" id="GnomeRow">
 			<div class="col-sm-3">
 				 <img src="images/German_garden_gnome.jpg" alt="NAItem1">
 			</div>
@@ -78,8 +78,13 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="#">Add to Basket</a>
-				<a class="btn btn-primary" href="#">Add to Wishlist</a>
+				<a class="btn btn-primary" href="">Add to Basket</a>
+				<a id="wishlistAddGnome" class="btn btn-primary" href="">Add to Wishlist</a>
+					<script>
+						document.getElementById("wishlistAddGnome").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wGnomeTrue", "true");
+						});
+					</script>
 			</div>
 		</div>
 		
