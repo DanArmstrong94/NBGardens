@@ -78,15 +78,15 @@
 			</div>
 			<div class="col-sm-2">
 				<a class="btn btn-primary" href="">Add to Basket</a>
-				<a class="btn btn-primary" href="">
+				<a id="wishlistbuttonGnome" class="btn btn-primary" href="">
 					Add to Wishlist
-					<!--
-					<script>
-						var bool = true;
-						sessionStorage.setItem("wGnomeTrue", bool);
-					</script>
-					-->
 				</a>
+					<script>
+						
+						document.getElementById("wishlistbuttonGnome").addEventListener("click", function wishlistFunction(){
+							localStorage.setItem("wGnomeTrue", "true");
+						});
+					</script>
 			</div>
 		</div>
 		
