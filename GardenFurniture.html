@@ -78,9 +78,12 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="">
-					Add to Basket
-				</a>
+				<a id="basketAddTable" class="btn btn-primary" href="">Add to Basket</a>
+					<script>
+						document.getElementById("basketAddTable").addEventListener("click", function basketFunction(){
+							localStorage.setItem("bTableTrue", "true");
+						});
+					</script>
 				<a id="wishlistAddTable" class="btn btn-primary" href="">Add to Wishlist</a>
 					<script>
 						document.getElementById("wishlistAddTable").addEventListener("click", function wishlistFunction(){

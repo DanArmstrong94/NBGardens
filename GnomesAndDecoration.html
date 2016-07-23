@@ -78,7 +78,12 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="">Add to Basket</a>
+				<a id="basketAddGnome" class="btn btn-primary" href="#">Add to Basket</a>
+					<script>
+						document.getElementById("basketAddGnome").addEventListener("click", function basketFunction(){
+							localStorage.setItem("bGnomeTrue", "true");
+						});
+					</script>
 				<a id="wishlistAddGnome" class="btn btn-primary" href="">Add to Wishlist</a>
 					<script>
 						document.getElementById("wishlistAddGnome").addEventListener("click", function wishlistFunction(){

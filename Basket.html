@@ -63,26 +63,111 @@
 	</header>
 	
 	<section class="container">
+	<div id="BGnomeRow">
 		<div class="row">
 			<div class="col-sm-3">
-				 <img src="images/GARDEN-FURNITURE.jpg" alt="basketItem1">
+				 <img src="images/German_garden_gnome.jpg" alt="basketItem1">
 			</div>
 			<div class="col-sm-6">
-				 <h3>Garden Seating Area (Full Set)</h3>
-				 <p>Elegant seating area including a covering umbrella so not even the rain can stop you!</p>
+				 <h3>Relaxed Gnome</h3>
+				 <p>A Stylish German Garden Gnome, in a lying pose with pipe.<p>
 			</div>
 			<div class="col-sm-1">
-				 <h3>£399.99</h3>
+				 <h3>£39.99</h3>
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="#">Remove from Basket</a>
+				<a id="basketRemoveGnome" class="btn btn-primary" href="Basket.html">Delete</a>
+					<script>
+						document.getElementById("basketRemoveGnome").addEventListener("click", function basketFunction(){
+							localStorage.setItem("bGnomeTrue", "false");
+						});
+					</script>
 			</div>
 		</div>
+	</div>
+	
+	<div id="BWheelbarrowRow">
+		<div class="row">
+			<div class="col-sm-3">
+				 <img src="images/wheelbarrow.jpg" alt="basketItem2">
+			</div>
+			<div class="col-sm-6">
+				 <h3>Racing Green Wheelbarrow</h3>
+				 <p>15L wheelbarrow with aliminium frame for more manouverability and for easier transport.</p>
+			</div>
+			<div class="col-sm-1">
+				 <h3>£60.99</h3>
+				 <p>Quant: 1</p>
+			</div>
+			<div class="col-sm-2">
+				<a id="basketRemoveWheelbarrow" class="btn btn-primary" href="Basket.html">Delete</a>
+					<script>
+						document.getElementById("basketRemoveWheelbarrow").addEventListener("click", function basketFunction(){
+							localStorage.setItem("bWheelbarrowTrue", "false");
+						});
+					</script>
+			</div>
+		</div>
+	</div>
+	
+	<div id="BTableRow">
+		<div class="row">
+			<div class="col-sm-3">
+				 <img src="images/gardenTable.jpg" alt="wishlistItem3">
+			</div>
+			<div class="col-sm-6">
+				 <h3>Childrens Garden Bench</h3>
+				 <p>Oak wood garden bench perfect for children.</p>
+			</div>
+			<div class="col-sm-1">
+				 <h3>£150.50</h3>
+				 <p>Quant: 1</p>
+			</div>
+			<div class="col-sm-2">
+				<a id="basketRemoveTable" class="btn btn-primary" href="Basket.html">Add to Basket</a>
+					<script>
+						document.getElementById("basketRemoveTable").addEventListener("click", function basketFunction(){
+							localStorage.setItem("bTableTrue", "false");
+						});
+					</script>
+			</div>
+		</div>
+	</div>
 		
 		<div id="ProceedToCheckout">
 			<a class="btn btn-primary" href="#">Proceed to Checkout</a>
 		</div>
+		    
+			
+			<script>
+                   if (localStorage.getItem("bGnomeTrue") === "true"){
+                       var gnome = document.getElementById('BGnomeRow');
+                       gnome.style.display = 'block';
+                   }
+				   else {
+					   var gnome = document.getElementById("BGnomeRow");
+					   gnome.style.display = 'none';
+				   };
+                   
+                   if (localStorage.getItem("bWheelbarrowTrue") === "true"){
+                       var wheelbarrow = document.getElementById('BWheelbarrowRow');
+                       wheelbarrow.style.display = 'block';
+                   }				   
+				   else {
+					   var wheelbarrow = document.getElementById("BWheelbarrowRow");
+					   wheelbarrow.style.display = 'none';
+				   };
+                   
+                   if (localStorage.getItem("bTableTrue") === "true"){
+                       var table = document.getElementById('BTableRow');
+                       table.style.display = 'block';                       
+                   }
+				   else {
+                       var table = document.getElementById('BTableRow');
+                       table.style.display = 'none';
+				   };
+		</script>
 			
 	</section>
 	

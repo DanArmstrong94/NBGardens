@@ -75,7 +75,12 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="">Add to Basket</a>
+				<a id="basketAddWheelbarrow" class="btn btn-primary" href="">Add to Basket</a>
+					<script>
+						document.getElementById("basketAddWheelbarrow").addEventListener("click", function basketFunction(){
+							localStorage.setItem("bWheelbarrowTrue", "true");
+						});
+					</script>
 				<a id="wishlistAddWheelbarrow" class="btn btn-primary" href="">Add to Wishlist</a>
 					<script>
 						document.getElementById("wishlistAddWheelbarrow").addEventListener("click", function wishlistFunction(){

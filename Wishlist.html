@@ -78,7 +78,12 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="#">Add to Basket</a>
+				<a id="basketAddGnome" class="btn btn-primary" href="#">Add to Basket</a>
+					<script>
+						document.getElementById("basketAddGnome").addEventListener("click", function basketFunction(){
+							localStorage.setItem("bGnomeTrue", "true");
+						});
+					</script>
 				<a id="wishlistRemoveGnome" class="btn btn-primary" href="Wishlist.html">Remove from Wishlist</a>
 					<script>
 						document.getElementById("wishlistRemoveGnome").addEventListener("click", function wishlistFunction(){
@@ -103,7 +108,12 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="#">Add to Basket</a>
+				<a id="basketAddWheelbarrow" class="btn btn-primary" href="">Add to Basket</a>
+					<script>
+						document.getElementById("basketAddWheelbarrow").addEventListener("click", function basketFunction(){
+							localStorage.setItem("bWheelbarrowTrue", "true");
+						});
+					</script>
 				<a id="wishlistRemoveWheelbarrow" class="btn btn-primary" href="Wishlist.html">Remove from Wishlist</a>
 					<script>
 						document.getElementById("wishlistRemoveWheelbarrow").addEventListener("click", function wishlistFunction(){
@@ -128,7 +138,12 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="#">Add to Basket</a>
+				<a id="basketAddTable" class="btn btn-primary" href="">Add to Basket</a>
+					<script>
+						document.getElementById("basketAddTable").addEventListener("click", function basketFunction(){
+							localStorage.setItem("bTableTrue", "true");
+						});
+					</script>
 				<a id="wishlistRemoveTable" class="btn btn-primary" href="Wishlist.html">Remove from Wishlist</a>
 					<script>
 						document.getElementById("wishlistRemoveTable").addEventListener("click", function wishlistFunction(){
