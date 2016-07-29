@@ -8,6 +8,8 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/search.js"></script>
+		<script src="js/add.js"></script>
+		<script src="js/checkWish.js"></script>
 		<link href="images/Favicon.ico" rel="icon" type="image/x-icon" />
 	</head>
 
@@ -74,18 +76,8 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a id="basketAddGnome" class="btn btn-primary" href="#">Add to Basket</a>
-					<script>
-						document.getElementById("basketAddGnome").addEventListener("click", function basketFunction(){
-							localStorage.setItem("bGnomeTrue", "true");
-						});
-					</script>
-				<a id="wishlistRemoveGnome" class="btn btn-primary" href="Wishlist.html">Remove from Wishlist</a>
-					<script>
-						document.getElementById("wishlistRemoveGnome").addEventListener("click", function wishlistFunction(){
-							localStorage.setItem("wGnomeTrue", "false");
-						});
-					</script>
+				<a id="basketAddGnome" class="btn btn-primary" href="" onclick="add('bGnome', 'true')">Add to Basket</a>
+				<a id="wishlistRemoveGnome" class="btn btn-primary" href="" onclick="add('wGnome', 'false')">Remove from Wishlist</a>
 			</div>
 		</div>
 	</div>
@@ -104,18 +96,8 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a id="basketAddWheelbarrow" class="btn btn-primary" href="">Add to Basket</a>
-					<script>
-						document.getElementById("basketAddWheelbarrow").addEventListener("click", function basketFunction(){
-							localStorage.setItem("bWheelbarrowTrue", "true");
-						});
-					</script>
-				<a id="wishlistRemoveWheelbarrow" class="btn btn-primary" href="Wishlist.html">Remove from Wishlist</a>
-					<script>
-						document.getElementById("wishlistRemoveWheelbarrow").addEventListener("click", function wishlistFunction(){
-							localStorage.setItem("wWheelbarrowTrue", "false");
-						});
-					</script>
+				<a id="basketAddWheelbarrow" class="btn btn-primary" href="" onclick="add('bWheelbarrow', 'true')">Add to Basket</a>
+				<a id="wishlistRemoveWheelbarrow" class="btn btn-primary" href="" onclick="add('wWheelbarrow', 'false')">Remove from Wishlist</a>
 			</div>
 		</div>
 	</div>
@@ -134,50 +116,11 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a id="basketAddTable" class="btn btn-primary" href="">Add to Basket</a>
-					<script>
-						document.getElementById("basketAddTable").addEventListener("click", function basketFunction(){
-							localStorage.setItem("bTableTrue", "true");
-						});
-					</script>
-				<a id="wishlistRemoveTable" class="btn btn-primary" href="Wishlist.html">Remove from Wishlist</a>
-					<script>
-						document.getElementById("wishlistRemoveTable").addEventListener("click", function wishlistFunction(){
-							localStorage.setItem("wTableTrue", "false");
-						});
-					</script>
+				<a id="basketAddTable" class="btn btn-primary" href="" onclick="add('bTable', 'true')">Add to Basket</a>
+				<a id="wishlistRemoveTable" class="btn btn-primary" href="" onclick="add('wTable', 'false')">Remove from Wishlist</a>
 			</div>
 		</div>
 	</div>
-
-	    <script>
-                   if (localStorage.getItem("wGnomeTrue") === "true"){
-                       var gnome = document.getElementById('WGnomeRow');
-                       gnome.style.display = 'block';
-                   }
-				   else {
-					   var gnome = document.getElementById("WGnomeRow");
-					   gnome.style.display = 'none';
-				   };
-                   
-                   if (localStorage.getItem("wWheelbarrowTrue") === "true"){
-                       var wheelbarrow = document.getElementById('WWheelbarrowRow');
-                       wheelbarrow.style.display = 'block';
-                   }				   
-				   else {
-					   var wheelbarrow = document.getElementById("WWheelbarrowRow");
-					   wheelbarrow.style.display = 'none';
-				   };
-                   
-                   if (localStorage.getItem("wTableTrue") === "true"){
-                       var table = document.getElementById('WTableRow');
-                       table.style.display = 'block';                       
-                   }
-				   else {
-                       var table = document.getElementById('WTableRow');
-                       table.style.display = 'none';
-				   };
-		</script>
 
 	</section>
 

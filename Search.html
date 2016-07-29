@@ -9,6 +9,7 @@
 		<script src="js/app.js"></script>
 		<script src="js/search.js"></script>
 		<script src="js/checkSearch.js"></script>
+		<script src="js/add.js"></script>
 		<link href="images/Favicon.ico" rel="icon" type="image/x-icon" />
 	</head>
 
@@ -74,13 +75,8 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="">Add to Basket</a>
-				<a id="wishlistAddGnome" class="btn btn-primary" href="">Add to Wishlist</a>
-					<script>
-						document.getElementById("wishlistAddGnome").addEventListener("click", function wishlistFunction(){
-							localStorage.setItem("wGnomeTrue", "true");
-						});
-					</script>
+				<a id="basketAddGnome" class="btn btn-primary" onclick="add('bGnome', 'true')">Add to Basket</a>
+				<a id="wishlistAddGnome" class="btn btn-primary" onclick="add('wGnome', 'true')">Add to Wishlist</a>
 			</div>
 		</div>
 		
@@ -97,13 +93,8 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a class="btn btn-primary" href="">Add to Basket</a>
-				<a id="wishlistAddWheelbarrow" class="btn btn-primary" href="">Add to Wishlist</a>
-					<script>
-						document.getElementById("wishlistAddWheelbarrow").addEventListener("click", function wishlistFunction(){
-							localStorage.setItem("wWheelbarrowTrue", "true");
-						});
-					</script>
+				<a class="btn btn-primary" onclick="add('bWheelbarrow', 'true')">Add to Basket</a>
+				<a id="wishlistAddWheelbarrow" class="btn btn-primary" onclick="add('wWheelbarrow', 'true')">Add to Wishlist</a>
 			</div>
 		</div>
 		
@@ -120,18 +111,8 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a id="basketAddTable" class="btn btn-primary" href="">Add to Basket</a>
-					<script>
-						document.getElementById("basketAddTable").addEventListener("click", function basketFunction(){
-							localStorage.setItem("bTableTrue", "true");
-						});
-					</script>
-				<a id="wishlistAddTable" class="btn btn-primary" href="">Add to Wishlist</a>
-					<script>
-						document.getElementById("wishlistAddTable").addEventListener("click", function wishlistFunction(){
-							localStorage.setItem("wTableTrue", "true");
-						});
-					</script>
+				<a id="basketAddTable" class="btn btn-primary" onclick="add('bTable', 'true')">Add to Basket</a>
+				<a id="wishlistAddTable" class="btn btn-primary" onclick="add('wTable', 'true')">Add to Wishlist</a>
 			</div>
 		</div>
 	</section>

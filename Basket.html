@@ -8,6 +8,8 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/search.js"></script>
+		<script src="js/add.js"></script>
+		<script src="js/checkBasket.js"></script>
 		<link href="images/Favicon.ico" rel="icon" type="image/x-icon" />
 	</head>
 
@@ -73,12 +75,7 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a id="basketRemoveGnome" class="btn btn-primary" href="Basket.html">Delete</a>
-					<script>
-						document.getElementById("basketRemoveGnome").addEventListener("click", function basketFunction(){
-							localStorage.setItem("bGnomeTrue", "false");
-						});
-					</script>
+				<a id="basketRemoveGnome" class="btn btn-primary" href="" onclick="add('bGnome', 'false')">Delete</a>
 			</div>
 		</div>
 	</div>
@@ -97,12 +94,7 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a id="basketRemoveWheelbarrow" class="btn btn-primary" href="Basket.html">Delete</a>
-					<script>
-						document.getElementById("basketRemoveWheelbarrow").addEventListener("click", function basketFunction(){
-							localStorage.setItem("bWheelbarrowTrue", "false");
-						});
-					</script>
+				<a id="basketRemoveWheelbarrow" class="btn btn-primary" href="" onclick="add('bWheelbarrow', 'false')">Delete</a>
 			</div>
 		</div>
 	</div>
@@ -121,12 +113,7 @@
 				 <p>Quant: 1</p>
 			</div>
 			<div class="col-sm-2">
-				<a id="basketRemoveTable" class="btn btn-primary" href="Basket.html">Add to Basket</a>
-					<script>
-						document.getElementById("basketRemoveTable").addEventListener("click", function basketFunction(){
-							localStorage.setItem("bTableTrue", "false");
-						});
-					</script>
+				<a id="basketRemoveTable" class="btn btn-primary" href="" onclick="add('bTable', 'false')">Delete</a>
 			</div>
 		</div>
 	</div>
@@ -134,36 +121,6 @@
 		<div id="ProceedToCheckout">
 			<a class="btn btn-primary" href="#">Proceed to Checkout</a>
 		</div>
-		    
-			
-			<script>
-                   if (localStorage.getItem("bGnomeTrue") === "true"){
-                       var gnome = document.getElementById('BGnomeRow');
-                       gnome.style.display = 'block';
-                   }
-				   else {
-					   var gnome = document.getElementById("BGnomeRow");
-					   gnome.style.display = 'none';
-				   };
-                   
-                   if (localStorage.getItem("bWheelbarrowTrue") === "true"){
-                       var wheelbarrow = document.getElementById('BWheelbarrowRow');
-                       wheelbarrow.style.display = 'block';
-                   }				   
-				   else {
-					   var wheelbarrow = document.getElementById("BWheelbarrowRow");
-					   wheelbarrow.style.display = 'none';
-				   };
-                   
-                   if (localStorage.getItem("bTableTrue") === "true"){
-                       var table = document.getElementById('BTableRow');
-                       table.style.display = 'block';                       
-                   }
-				   else {
-                       var table = document.getElementById('BTableRow');
-                       table.style.display = 'none';
-				   };
-		</script>
 			
 	</section>
 	
