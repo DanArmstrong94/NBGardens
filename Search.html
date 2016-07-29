@@ -7,6 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="css/wishlist.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script src="js/app.js"></script>
+		<script src="js/search.js"></script>
+		<script src="js/checkSearch.js"></script>
 		<link href="images/Favicon.ico" rel="icon" type="image/x-icon" />
 	</head>
 
@@ -24,12 +26,7 @@
 			<div class="col-sm-5">
                 <form action="Search.html" method="get">
 					<input name="searchitems" id="search-terms" type="text" placeholder="Search..." required>
-					<input type="submit" value="Search" onclick="MyFunction()">
-					<script>
-						function MyFunction(){
-							sessionStorage.setItem("searchValue", document.getElementById("search-terms").value);
-						};
-					</script>
+					<input type="submit" value="Search" onclick="setSearch()">
 				</form>
 			</div>
 			<!-- JQuery Drop Down Login and other Nav parts -->
@@ -137,24 +134,6 @@
 					</script>
 			</div>
 		</div>
-            
-        <script>
-                   
-                   if (sessionStorage.getItem("searchValue") !== "Gnome"){
-                       var gnome = document.getElementById('GnomeRow');
-                       gnome.style.display = 'none';
-                   };
-                   
-                   if (sessionStorage.getItem("searchValue") !== "Wheelbarrow"){
-                       var wheelbarrow = document.getElementById('WheelbarrowRow');
-                       wheelbarrow.style.display = 'none';
-                   };
-                   
-                   if (sessionStorage.getItem("searchValue") !== "Table"){
-                       var table = document.getElementById('TableRow');
-                       table.style.display = 'none';                       
-                   };
-		</script>
 	</section>
 
 	
