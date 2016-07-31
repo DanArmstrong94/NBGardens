@@ -213,6 +213,30 @@ footer li img {
   height: 32px;
 }
 
+li #firstNameError {
+	text-color: red;
+	display: none;
+}
+
+li #surnameError {
+	text-color: red;
+	display: none;
+}
+
+li #emailError {
+	text-color: red;
+	display: none;
+}
+
+li #passwordError {
+	text-color: red;
+	display: none;
+}
+
+li #password2Error {
+	text-color: red;
+	display: none;
+}
 
 
 
